@@ -41,6 +41,51 @@ function main() {
       $(".navbar-collapse").collapse('hide');
     }
   });
+  
+  
+
+     // ---------------------------------------------- //
+     //show more and less Jquery Plugin
+    // ---------------------------------------------- //
+  	$(document).ready(function() {
+	
+		$(".menu-item-description").shorten({
+			"showChars" : 60,
+			"moreText"	: "See More",
+			"lessText"	: "Less",
+		});
+
+		$(".whyMunch").shorten({
+			"showChars" :350,
+			"moreText"	: "See More",
+			"lessText"	: "Less",
+		});
+	
+	
+	});
+	
+	    // ---------------------------------------------- //
+    // Reservation Modal Opening & Closing
+    // ---------------------------------------------- //
+    $('#open-reservation').click(function (e) {
+        e.preventDefault();
+        $('.reservation-overlay').fadeIn();
+        $('body').css({'overflow': 'hidden'});
+
+        setTimeout(function () {
+            $('#reservation-modal').addClass('is-visible');
+        }, 100);
+    });
+
+    $('#close').click(function () {
+        $('.reservation-overlay').fadeOut();
+        setTimeout(function () {
+            $('body').css('overflow', 'auto');
+        }, 400);
+        $('#reservation-modal').removeClass('is-visible');
+    });
+
+	
 
 }());
 
