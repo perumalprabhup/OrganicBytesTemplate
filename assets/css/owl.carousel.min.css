@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
  
-
 .owl-carousel .owl-wrapper:after {
   display: block;
   visibility: hidden;
