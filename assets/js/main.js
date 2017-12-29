@@ -85,7 +85,16 @@ function main() {
         $('#reservation-modal').removeClass('is-visible');
     });
 
-	
+	// set focus when modal is opened
+$('#modal-content').on('shown.bs.modal', function () {
+    $("#txtname").focus();
+});
+
+// show the modal onload
+$('#modal-content').modal({
+    show: true
+});
+ 
 
 }());
 
