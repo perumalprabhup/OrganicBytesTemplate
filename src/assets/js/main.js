@@ -94,7 +94,11 @@ $('#modal-content').on('shown.bs.modal', function () {
 $('#modal-content').modal({
     show: true
 });
- 
+//veggies model
+ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
 
 }());
 
