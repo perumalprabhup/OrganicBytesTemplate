@@ -84,6 +84,58 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 
+/*Discount Pop Up */
+
+  .items {
+  position: relative;
+  background: #c5a9a9;
+  border-radius: 10px;
+  padding: 60px 10px;
+}
+  .items img {
+  max-width: 180px;
+  margin-left:100px;
+}
+ .items .discount {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #7fb401;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-itemss: center;
+  position: absolute;
+  top: 50px;
+  right: 12%;
+}
+ .items .discount span {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+  margin-top:10px;
+}
+ .items p {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+ .items p.before {
+  text-decoration: line-through;
+}
+
+button.close {
+    -webkit-appearance: none;
+   
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    margin-top: -32px;
+   
+}
 /*Custom Bullets*/
 
 .custom-bullet li {
