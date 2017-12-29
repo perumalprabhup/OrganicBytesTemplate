@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Lightbox } from 'angular2-lightbox';
  
 
 @Component({
