@@ -388,11 +388,17 @@ header .intro-text {
 	margin: 15px 0 30px;
 }
 /* Menu Section */
+.tab-content {
+  border: 1px solid #dddddd;
+
+  padding: 10px;
+}
+
 #restaurant-menu {
 	padding: 100px 0 60px 0;
 }
 #restaurant-menu img {
-	width: 300px;
+ 
 	box-shadow: 15px 0 #a7c44c;
 }
 #restaurant-menu h3 {
