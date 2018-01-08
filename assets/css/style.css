@@ -84,6 +84,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 
+
+.aboutUs{
+	
+	padding-top:50px;
+	
+}
+ 
+ 
+
 /*Discount Pop Up */
 
   .items {
@@ -94,7 +103,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
   .items img {
   max-width: 180px;
-  margin-left:100px;
+  
 }
  .items .discount {
   width: 64px;
@@ -136,6 +145,9 @@ button.close {
     margin-top: -32px;
    
 }
+
+
+
 /*Custom Bullets*/
 
 .custom-bullet li {
@@ -155,6 +167,41 @@ button.close {
     color: red;
 	
 }
+
+/*adds carousel*/
+
+ .carousel-caption {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  bottom: 0px;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #000;
+  text-shadow: none;
+  & .btn {
+    text-shadow: none; // No shadow for button elements in carousel-caption
+  }
+}
+
+.carousel {
+    position: relative;
+}
+
+.controllers {
+    position: absolute;
+    top: 0px;
+}
+
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none;
+}
+ 
+
+
+
 
 /* Navigation */
 .navbar .navbar-nav {
@@ -364,6 +411,38 @@ header .intro-text {
 	line-height: 24px;
 	margin: 15px 0 30px;
 }
+
+
+/* aboutUS Section */
+#aboutUS {
+	padding: 120px 0;
+}
+#aboutUS .aboutUS-item {
+	margin: 0 20px;
+}
+
+#aboutUS p {
+	line-height: 35px;
+	margin: 15px 0 30px;
+}
+ 
+ /* Our Vision Section */
+#ourVision {
+	padding: 120px 0;
+	 background: #f6f6f6;
+}
+#ourVision .ourVision-item {
+	margin: 0 20px;
+}
+
+#ourVision p {
+	line-height: 35px;
+	margin: 15px 0 30px;
+}
+ 
+  
+ 
+
 /* About Section */
 #about {
 	padding: 0;
@@ -554,7 +633,7 @@ color: #999;
 /* Footer Section*/
 #footer {
 	background: #262626;
-	padding: 40px 0 20px 0;
+	padding: 20px 0 10px 0;
 }
 #footer .social {
 	margin-top: -5px;
@@ -566,7 +645,7 @@ color: #999;
 }
 #footer .social i.fa {
 	font-size: 24px;
-	padding: 4px;
+
 	color: #888;
 	transition: all 0.3s;
 }
