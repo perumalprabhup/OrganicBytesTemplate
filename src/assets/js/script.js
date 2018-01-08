@@ -8,7 +8,7 @@ $(document).ready(function () {
     // Navbar Shrinking Behavior
     // ---------------------------------------------- //
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 20) {
+        if ($(window).scrollTop() > 20) { 
             $('nav.navbar').addClass('shrink');
         } else {
             $('nav.navbar').removeClass('shrink');

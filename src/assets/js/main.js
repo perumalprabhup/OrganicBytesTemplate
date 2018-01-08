@@ -23,7 +23,7 @@ function main() {
 		});
 	
 	
-	});
+	}); 
 	
 	//stall Pagination	   
 	    $(window).bind("load resize slid.bs.carousel", function() {
