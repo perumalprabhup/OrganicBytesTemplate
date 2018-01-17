@@ -3,8 +3,15 @@ function main() {
 
 (function () {
    'use strict';
-   
-  
+    // ---------------------------------------------- //
+    // nav Bar to close Automatically Based upon the selection 
+    // ---------------------------------------------- //
+  $(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
      // ---------------------------------------------- //
      //show more and less Jquery Plugin
     // ---------------------------------------------- //

@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewComponent implements OnInit {
  
- public fieldArray: Array<any> = [];
-    public newAttribute: any = {};
+	public reviewArray: Array<any> = [];
+    public newReview: any = {};
 
     addFieldValue() {
-        this.fieldArray.push(this.newAttribute)
-        this.newAttribute = {};
+        this.reviewArray.push(this.newReview)
+        this.newReview = {};
     }
 	constructor(){
-	 this.newAttribute= [{name:"Prabhu",email:"prabhu@utkrishta.com",comment:"asda asd asdad ad asd a asd"},
+	 this.newReview= [{name:"Prabhu",email:"prabhu@utkrishta.com",comment:"asda asd asdad ad asd a asd"},
 	{name:"Perumal",email:"perumal@utkrishta.com",comment:"asda asd asdad ad asd a asd"},
 	{name:"Sudharsan",email:"ram@utkrishta.com",comment:"asda asd asdad ad asd a asd"}
 	] 

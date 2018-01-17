@@ -6,15 +6,15 @@
       <h2>What Customer Tells About Us</h2>
     </div>
     <div class="row">
-      <div class="col-xs-4">
-         <div class="container" >
+      
+         <div class="container" > 
 		 <div  style="text-align:left">
      <!-- List -->
-    <h4>Comments:</h4>
+		<h4>Comments:</h4>
 
    <ul>
      
-      <li *ngFor="let item of fieldArray" >  
+      <li *ngFor="let item of reviewArray" >  
   		<blockquote>
           {{item.email}} 
           <cite class="clearfix pull-right"> — {{item.name}}</cite>
@@ -24,32 +24,36 @@
  
 	
 	</div>
+	</div>
     
       <form name="sentMessage" id="contactForm"  novalidate>
+	  <div class="conatiner">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" name="name" [(ngModel)] ="newAttribute.name" required="required">
+              <input type="text" id="name" class="form-control" placeholder="Name" name="name" [(ngModel)] ="newReview.name" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" name="email" [(ngModel)] ="newAttribute.email"   required="required">
+              <input type="email" id="email" class="form-control" placeholder="Email" name="email" [(ngModel)] ="newReview.email"   required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
         </div>
         <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4"   placeholder="Message" name="comment" [(ngModel)] ="newAttribute.comment" required></textarea>
+          <textarea name="message" id="message" class="form-control" rows="4"   placeholder="Message" name="comment" [(ngModel)] ="newReview.comment" required></textarea>
           <p class="help-block text-danger"></p>
         </div>
-        <div id="success"></div>
+        <div id="success">  </div>
         <button type="submit" class="btn btn-custom btn-lg" (click)="addFieldValue()">Post A comment</button>
-      </form>
+      </div>
+	
+	  </form>
    
-      </div>
-      </div>
+     
+    
       
      
     </div>
