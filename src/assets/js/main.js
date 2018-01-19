@@ -6,11 +6,11 @@ function main() {
     // ---------------------------------------------- //
     // nav Bar to close Automatically Based upon the selection 
     // ---------------------------------------------- //
-  $(document).ready(function () {
-  $(".navbar-nav li a").click(function(event) {
+	$(document).ready(function () {
+	$(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
-  });
-});
+	});
+	});
 
      // ---------------------------------------------- //
      //show more and less Jquery Plugin
@@ -32,12 +32,12 @@ function main() {
 	
 	}); 
 	
-	//stall Pagination	   
-	    $(window).bind("load resize slid.bs.carousel", function() {
-  var imageHeight = $(".active .holder").height();
-  $(".controllers").height( imageHeight );
-  console.log("Slid");
-});
+	//install Pagination	   
+	$(window).bind("load resize slid.bs.carousel", function() {
+		var imageHeight = $(".active .holder").height();
+		$(".controllers").height( imageHeight );
+		console.log("Slid");
+	});
 
 	
 	    // ---------------------------------------------- //
@@ -62,21 +62,22 @@ function main() {
     });
 
 	// set focus when modal is opened
-$('#modal-content').on('shown.bs.modal', function () {
-    $("#txtname").focus();
-});
+	$('#modal-content').on('shown.bs.modal', function () {
+		$("#txtname").focus();
+	});
 
-// show the modal onload
-$('#modal-content').modal({
-    show: true
-});
-//veggies model
- $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+	// show the modal onload
+	$('#modal-content').modal({
+		show: true
+	});
+
+	//veggies model
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
                 $(this).ekkoLightbox();
             });
 
-}());
+	}());
 
 
 }

@@ -7,23 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewComponent implements OnInit {
  
-	public reviewArray: Array<any> = [];
+	public reviewArray: Array<any> = [{name:"Prabhu",email:"prabhu@utkrishta.com",comment:"asda asd asdad ad asd a asd"},
+									{name:"Perumal",email:"perumal@utkrishta.com",comment:"asda asd asdad ad asd a asd"},
+									{name:"Sudharsan",email:"ram@utkrishta.com",comment:"asda asd asdad ad asd a asd"}];
     public newReview: any = {};
 
     addFieldValue() {
         this.reviewArray.push(this.newReview)
         this.newReview = {};
     }
-	constructor(){
-	 this.newReview= [{name:"Prabhu",email:"prabhu@utkrishta.com",comment:"asda asd asdad ad asd a asd"},
-	{name:"Perumal",email:"perumal@utkrishta.com",comment:"asda asd asdad ad asd a asd"},
-	{name:"Sudharsan",email:"ram@utkrishta.com",comment:"asda asd asdad ad asd a asd"}
-	] 
-	}
+	constructor(){}
 
-	  ngOnInit() {
-	   
-  }
+	  ngOnInit() {}
  /*
 	
 	items:[{
